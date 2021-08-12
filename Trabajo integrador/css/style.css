@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,900&display=swap');
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*PRIMER HEADER*/
+header div.config{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+header div.config nav ul{
+    width:300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*SEGUNDO HEADER*/
+header div.menu{
+    background-color: #F0A83E;
+    color:white;
+    font-size:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+header div.menu nav ul{
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header div.menu nav ul li::before{
+    content: '\f1b0';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+/*BANNER*/
+main div.banner{
+    height: 600px;
+    background-image: url('../img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+main div.banner div.bienvenida{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+    top: 200px;
+}
+main div.banner div.bienvenida h1{
+    background-color: white;
+    color: #3C2313;
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main div.banner div.bienvenida p.sub{
+    color: #3C2313;
+    font-size: 20px;
+}
+
+main div.banner div.bienvenida button{
+    background-color: #F0A83E;
+    border-color: #F0A83E;
+    border-radius: 7px;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+/*PRODUCTOS TITULO*/
+main section.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:50px;
+}
+main section.productos div.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main section.productos div.titulo i{
+    font-size: 70px;
+    color:#F0A83E;
+    padding: 15px;
+}
+main section.productos div.titulo h2{
+    color:#3C2313;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 15px;
+}
+main section.productos div.titulo nav ul{
+    width: 400px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #666666;
+    font-size: 20px;
+    padding: 15px;
+}
+/*PRODUCTOS CARDS*/
+main section.productos div.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0px;
+    flex-wrap: wrap;
+}
+main section.productos div.cards article.prod{
+    width: 300px;
+    height: 400px;
+    background-color: #FBFAF6;
+    text-align: center;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+main section.productos div.cards article.prod img{
+    width: 100%;
+}
+
+main section.productos div.cards article.prod div h4{
+    color:#3C2313;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+main section.productos div.cards article.prod div p{
+    color:#F0A83E;
+    font-size: 20px;
+}
+
+/*FORMULARIO*/
+main section.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+main section.form form label{
+    color: #3C2313;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+main section.form form input{
+    background-color: #3C2313;
+    border-color: #3C2313;
+    color:white;
+    width:500px;
+    padding:15px;
+    border-radius: 15px;
+    margin: 10px 0px;
+}
+main section.form form div{
+    display: flex;
+    width:300px;
+    justify-content: space-evenly;
+    margin-top:15px;
+}
+main section.form form div input[type="reset"]{
+    background-color:#8A8787;
+    border-color: #8A8787;
+    width:100px;
+    padding:0px;
+}
+main section.form form div input[type="submit"]{
+    background-color: #F0A83E;
+    border-color: #F0A83E;
+    width:100px;
+}
+/*SUSCRIBETE*/
+main section.sus{
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 50px;
+    flex-wrap: wrap;
+}
+main section.sus div{
+    color:white;
+    font-size: 25px;
+}
+main section.sus form input{
+    background-color: white;
+    border-color: white;
+    color:gray;
+    width:400px;
+    border-radius: 15px;
+    padding:15px;
+}
+main section.sus form input[type="submit"]{
+    background-color: #3C2313;
+    border-color: #3C2313;
+    color:white;
+    width:100px;
+}
+
+/*Footer info*/
+footer div.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 50px;
+    background-color:#3C2313;
+    color:white;
+    height:250px;
+}
+footer div.info div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer div.info div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:15px;
+}
+footer div.info div div img{
+    height:50px;
+    width: 50px;;
+}
+footer div.info div div div h6{
+    font-size: 18px;
+}
+footer div.info div div div span{
+    color:#8A8787;
+    font-size: 12px;
+}
+
+/*ultimo footer*/
+footer p{
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    padding:5px
+}
+
+/*ADAPTATIVO*/
+@media (max-width: 1020px){
+    main section.sus{
+        flex-direction: column;
+    }
+}
+@media (max-width: 700px){
+    header div.config{
+        display: none;
+    }
+    main section.productos div.cards article.prod{
+        width: 80%;
+        height: 100%;
+        margin-top: 40px;
+    }
+}

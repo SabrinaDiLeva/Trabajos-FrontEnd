@@ -1,0 +1,440 @@
+/*Configuración general*/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+/*
+body{
+    font-family: 'Be Vietnam', sans-serif;
+    background-image: url('../img/bg-tablet-pattern.svg');
+    background-size: 80%;
+    background-repeat: repeat-y;
+}*/
+body {
+    font-family: 'Be Vietnam', sans-serif;
+    background-image: url('../img/bg-tablet-pattern.svg'), url('../img/bg-tablet-pattern.svg');
+    background-size: 80%, 80%;
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: 800px,-300px;
+    background-position-y: -200px,900px;
+    background-size: 60%,60%;
+}
+
+/*header*/
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 25px;
+}
+header nav ul{
+    width:500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav ul a{
+    color:#242E52;
+    text-decoration: none;
+}
+header nav ul a:hover{
+    color:#B3B2B7;
+}
+header button.menu{
+    display: none;
+}
+button{
+    background-color: #F3603B;
+    color:white;
+    padding:15px 30px;
+    border:none;
+    border-radius: 20px;
+    transition: box-shadow 1s;
+    transition: opacity 0.5s;
+}
+
+button:hover{
+    box-shadow: 0px 5px 3px #B3B2B7;
+    opacity:80%;
+    cursor:pointer;
+}
+
+/*banner*/
+main section.principal{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:40px 150px;
+}
+main section.principal div h1{
+    color:#232C50;
+    font-size: 60px;
+    line-height: 68px;
+}
+main section.principal div p{
+    font-size: 18px;
+    width:380px;
+    padding: 30px 0px;
+}
+main section.principal img{
+    width:500px;
+    margin-left: 30px;
+}
+/*pregunta*/
+             /*izquierda*/
+main section.preg{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:0px 80px 40px 80px;
+}
+main section.preg div{
+    width:450px;
+    margin-right: 20px;
+}
+main section h2{
+    color: #232851;
+    font-size: 40px;
+}
+main section.preg div p{
+    width:300px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+            /*derecha*/
+main section.preg article div.rta{
+    display: flex;
+    width: 500px;
+}
+main section.preg article div.rta div.nro{
+    height:40px;
+    width:50px;
+    background-color: #F3603B;
+    color:white;
+    border-radius: 20px;
+    text-align: center;
+    padding-top:8px;
+}
+main section.preg article div.rta div{
+    padding-bottom: 20px;
+}
+main section.preg article div.rta div h3{
+    color:#232851;
+}
+main section.preg article div.rta div p{
+    color:#B3B2B7;
+    width:100%;
+}
+
+/*comentarios*/
+main section.comentarios{
+    text-align: center;
+}
+main section.comentarios div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:60px 40px;
+    flex-wrap: wrap;
+}
+main section.comentarios div article{
+    width: 300px;
+    height:220px;
+    background-color:#FAFAFA;
+    border-radius: 15px;
+    padding:20px;
+    margin-top: 20px;
+    position:relative;
+}
+main section.comentarios div article img{
+    width:80px;
+    position:absolute;
+    top:-40px;
+    left:calc(300px/2 - 80px/2)
+}
+main section.comentarios div article h4{
+    margin-top: 40px;
+}
+main section.comentarios div article p{
+    color:#B9B9C1;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/*primer footer*/
+footer div.primero{
+    background:#F3613C;
+    height:200px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 120px;
+}
+footer div.primero div{
+    position:absolute;
+    height:200px;
+    left:10px;
+    object-fit:initial;
+    overflow: hidden;
+    opacity:0.5;
+}
+footer div.primero p{
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    width:500px;
+}
+footer div.primero button{
+    background-color: white;
+    color:#F3603B;
+    padding:15px 30px;
+    border:none;
+    border-radius: 20px;
+}
+/*segundo footer*/
+footer div.segundo{
+    background-color: black;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+footer div.segundo div.col{
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer div.segundo div.col div i{
+    color:white;
+}
+footer div.segundo div.col div i:hover{
+    color:#F3603B;
+}
+footer div.segundo div.anclas{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer div.segundo nav ul{
+    display: flex;
+    flex-direction: column;
+}
+footer div.segundo nav ul a{
+    display:inline;
+    color:white;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+footer div.segundo nav ul a:hover{
+    color:#F3603B;
+}
+footer div.segundo div.col form input{
+    background-color: white;
+    padding:15px;
+    width:200px;
+    border:none;
+    border-radius: 15px;
+}
+footer div.segundo div.col form input[type="submit"]{
+    background-color: #F3603B;
+    color:white;
+    width:60px;
+    transition: box-shadow 1s;
+    transition: opacity 0.5s;
+}
+
+input[type="submit"]:hover{
+    box-shadow: 0px 3px 3px #B3B2B7;
+    opacity:80%;
+    cursor:pointer;
+}
+
+footer div.segundo div.col p{
+    color:#8C8C94;
+    font-size: 12px;
+    text-align: right;
+}
+
+/*ADAPTACION A MOVIL*/
+@media (max-width:1000px){
+    main section.comentarios div{
+        padding:60px 5px;
+        width:100%;
+    }
+    /*banner*/
+    main section.principal div h1{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    main section.principal div p{
+        font-size: 14px;
+        width:300px;
+    }
+    main section.principal img{
+        width:300px;
+    }
+    /*pregunta*/
+             /*izquierda*/
+    main section.preg{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding:0px 80px 40px 80px;
+    }
+    main section.preg div{
+        width:50%;
+    }
+    main section h2{
+        font-size: 30px;
+    }
+    main section.preg div p{
+        width:80%;
+        font-size: 12px;
+    }
+                /*derecha*/
+    main section.preg article div.rta{
+        width: 350px;
+    }
+    main section.preg article div.rta div.nro{
+        height:30px;
+        width:40px;
+        padding-top:3px;
+    }
+    main section.preg article div.rta div{
+        width: 400px;
+    }
+    /*cards de comentarios*/
+    main section.comentarios div article{
+        margin-top: 70px;
+    }
+    /*footers*/
+    footer div.primero{
+        padding: 0px 50px;
+    }
+    footer div.segundo{
+        padding: 40px 10px;
+    }
+}
+
+@media (max-width:850px){
+    /*header*/
+    header{
+        padding: 30px px;
+    }
+    header nav ul{
+        display:none;
+    }
+    header button{
+        display: none;
+    }
+    header button.menu{
+        display: contents;
+    }
+    /*banner*/
+    main section.principal{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    main section.principal img{
+        width: 80%;
+        margin-left: 0px;
+    }
+    main section.principal div{
+        text-align: center;
+    }
+    main section.principal div p{
+        font-size: 18px;
+        width:auto;
+        padding: 30px 0px;
+        color:#B3B2B7;
+    }
+    /*pregs*/
+    main section.preg{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main section.preg div{
+        width:80%;
+        text-align: center;
+    }
+    main section.preg div p{
+        width: auto;
+        color:#B3B2B7;
+        padding-bottom: 30px;
+    }
+    main section.preg article{
+        width:80%;
+    }
+    main section.preg article div.rta{
+        width:100%;
+    }
+    main section.preg article div.rta div{
+        width: 100%;
+    }
+    main section.preg article div.rta div h3{
+        background-color: #FFF0EC;
+    }
+    main section.preg article div.rta div.nro{
+        height:30px;
+        width:50px;
+        text-align: center;
+        padding-top:3px;
+    }
+    /*comentarios*/
+    main section.comentarios article.card1, main section.comentarios article.card3{
+        display: none;
+    }
+    main section.comentarios article.card2{
+        margin-top: 10px;
+    }
+
+    /*primer footer*/
+    footer div.primero{
+        width:100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer div.primero p{
+        font-size: 25px;
+        width:auto;
+        padding-bottom: 20px;
+    }
+    footer div.primero div img{
+        width:80%;
+    }
+    /*segundo footer*/
+    footer div.segundo{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+    }
+    footer div.segundo div.col{
+        padding:20px 0px;
+        text-align: center;
+    }
+    footer div.segundo div.col p{
+        width:80%;
+        position: absolute;
+        bottom:20px;
+        text-align: center;
+        padding-left: 30px;
+    }
+    footer div.segundo div.anclas{
+        width:80%;
+        padding:20px 0px;
+        width:40%;
+    }
+    footer div.segundo div.anclas nav ul{
+        width:100%;
+    }
+    footer div.segundo div.anclas nav ul li a{
+        font-size: 12px;
+    }
+
+}

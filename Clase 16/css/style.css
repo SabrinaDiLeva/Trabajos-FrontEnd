@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap');
+
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*HEADER*/
+header{
+    height: 15hv;
+}
+header p{
+    background-color: #1CD1B0;
+    font-size:12px;
+    padding:5px;
+}
+header div{
+    background-color: #00669F;
+    color:white;
+    padding:10px 0px;
+    display: flex;
+    align-items: center;
+}
+header div img{
+    height: 50px;
+    width: 120px;
+    padding: 0px 20px;
+}
+header div h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+/*MAIN*/
+main.forms{
+    position:relative;
+    height:500px;
+}
+main section.forms{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position:absolute;
+    top: 20px;
+    left: calc(50% - 500px/2)
+}
+main section.forms h2{
+    font-size:80px;
+    color: #333333;
+}
+main section.forms form div input{
+    width:500px;
+    height:40px;
+    margin:10px 0px;
+}
+main section.forms form div input[type="submit"]{
+    background-color: #1CD1B0;
+    border-color: #1CD1B0;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+main section.forms form p{
+    text-align: center;
+    color: #00669F;
+    font-size: 16px;
+    padding: 10px;
+}
+main section.forms form p a{
+    color: black;
+    text-decoration: none;
+}
+/*AGREGADOS PARA EL REGISTRO*/
+main section.forms form div select{
+    width:500px;
+    height:40px;
+    margin:10px 0px;
+}
+main section.forms form div input.submit2{
+    background-color: #1CD1B0;
+    border-color: #1CD1B0;
+    font-weight: bolder;
+    border-radius: 20px;
+    width:250px;
+}
+main section.forms form div input[type="reset"]{
+    background-color: #888888;
+    border-color: #888888;
+    color:white;
+    font-weight: bolder;
+    border-radius: 20px;
+    width:250px;
+}
+/*AGREGADOS PARA CONTACTO*/
+main section.forms form div.comentario textarea{
+    width:500px;
+    height: 100px;
+}
+
+/*FOOTER
+footer{
+    position: absolute;
+    bottom:0px;
+    width:100%;
+}*/
+footer p{
+    background-color: #00669F;
+    text-align: center;
+    color:white;
+    padding:10px;
+}
+footer p span{
+    text-transform: uppercase;
+}
+
+/*PAGINA PRINCIPAL*/
+    /*nuevo header*/
+header div.menu{
+    background-color: #001D2D;
+    height:30px;
+    position:relative;
+}
+header div.menu nav{
+    position: absolute;
+    right:10px;
+}
+header div.menu nav ul{
+    width:400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header div.menu nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+    /*CARDS*/
+main section.cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 65px 0px;
+    flex-wrap: wrap;
+}
+main section.cards article.caja{
+    height: 750px;
+    width: 23%;
+    text-align: center;
+}
+            /*ICONO CORAZON*/
+main section.cards article.caja div.top{
+    position: relative;
+}
+main section a article.caja div.top i{
+    color:red;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left:20px;
+}
+            /*PARTE DE TEXTO*/
+main section.cards article.caja div.contenido{
+    height: 60%;
+    padding: 20px;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position:relative;
+    padding: 40px 15px 20px 15px;
+}
+
+main section.cards article.caja div.contenido h4{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+main section.cards article.caja div.contenido p{
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    color:black;
+}
+main section.cards article.caja div.contenido a{
+    text-decoration: none;
+}
+main section.cards article.caja div.contenido a button{
+    background-color: #00669F;
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+            /*IMAGEN CENTRAL*/
+main section.cards article.caja div.contenido img{
+    width: 120px;
+    height:120px;
+    border-radius: 50%;
+    position:absolute;
+    top: -75px;
+    left: calc(300px/2 - 120/2)
+}
+
+/*FONDOS CARDS*/
+main section.cards article.caja1 div.top{
+    height: 40%;
+    width: 100%;
+    background-image: url('../img/fondo-batman.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+main section.cards article.caja2 div.top{
+    height: 40%;
+    width: 100%;
+    background-image: url('../img/fondo-mujerMaravilla.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+main section.cards article.caja3 div.top{
+    height: 40%;
+    width: 100%;
+    background-image: url('../img/fondo-Superman.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+main section.cards article.caja4 div.top{
+    height: 40%;
+    width: 100%;
+    background-image: url('../img/fondo-harley.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/*PAGINA HARLEY*/
+header h2{
+    background-color: #00669F;
+    color:white;
+    font-size: 40px;
+    font-weight: normal;
+    padding:20px;
+}
+main section.harley{
+    height:700px;
+    background-image: url('../img/fondo-harley.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section.harley article{
+    width:500px;
+    height:470px;
+    text-align: center;
+    background-color: #F3F3F3;
+    padding:40px;
+    border-radius: 15px;
+    position:relative;
+    margin-top: 100px;
+}
+main section.harley article img.principal{
+    width: 120px;
+    height:120px;
+    border-radius: 50%;
+    position:absolute;
+    top: -75px;
+    left: 190px;
+}
+main section.harley article h4{
+    color:#2C0187;
+    font-size: 30px;
+    font-weight: normal;
+    text-decoration: underline;
+    margin: 20px 0px;
+}
+main section.harley article p span{
+    color:#2C0187;
+    font-style: italic;
+}
+main section.harley article img{
+    width:300px;
+}
+main section.harley article div a button{
+    width:500px;
+    height:70px;
+    background-color: #2C0187;
+    border-color: #2C0187;
+    color:white;
+    text-decoration: none;
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 0px 0px 15px 15px;
+}
